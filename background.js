@@ -1,10 +1,10 @@
 chrome.action.onClicked.addListener((tab) => {
 
-  chrome.scripting.executeScript(
-    {
-      target: {tabId: tab.id},
-      files: ['popup.js'],
-    });
+  // chrome.scripting.executeScript(
+  //   {
+  //     target: {tabId: tab.id},
+  //     files: ['popup.js'],
+  //   });
 
   chrome.tabs.query({
     active: true,               // Select active tabs
